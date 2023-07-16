@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.css"
+        integrity="sha512-JC0aiIVN1FWqcFfux4Xy9wFgEK3JL1yHGjilaFEK7kzLHVW/PKAS2042T3yvvCqZFl4sYaWmZJ4p8kau+0U56g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b9d1a2a2ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Profile Page - Social-book</title>
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR START HERE ========== -->
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="" class="log">
+            <ul>
+                <li><i class='bx bxs-bell'></i></li>
+                <li><i class='bx bxs-inbox'></i></li>
+                <li><i class='bx bx-video'></i></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/wap-profile.jpeg" alt="" class="profile">
+            </div>
+        </div>
+
+        <!-- ============= settings menu ======================== -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/wap-profile.jpeg" alt="">
+                    <div>
+                        <p>Alexander Junior</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Hel us to improve design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img class="settings-icon" src="images/setting.png">
+                    <a href="">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img class="settings-icon" src="images/help.png">
+                    <a href="">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img class="settings-icon" src="images/display.png">
+                    <a href="">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img class="settings-icon" src="images/logout.png">
+                    <a href="">Logout<img src="images/arrow.png" width="10px"></a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- ========== NAVBAR END HERE ========== -->
+
+    <!-- ========= profile page start here ========= -->
+    <div class="profile-container">
+        <img src="images/cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img class="pd-image" src="images/profile.png" alt="">
+                    <div>
+                        <h3>Alexander Msumba</h3>
+                        <p>3 995 Friends - 129 mutual</p>
+                        <img src="images/aj-2.jpg">
+                        <img src="images/member-2.png">
+                        <img src="images/member-3.png">
+                        <img src="images/member-4.png">
+                        <img src="images/wap-profile.jpeg">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+
+                <button type="button"><img src="images/add-friends.png"> Friend</button>
+                <button type="button"><img src="images/message.png"> Message</button>
+                <br>
+                <a href=""><img src="images/more.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="profile info">
+            <div class="info-col"></div>
+            <div class="post-col"></div>
+        </div>
+
+    </div>
+    <!-- =============== profile page end here ==========  -->
+    <div class="footer">
+        <p>Copyright 2023 - Alexander Msumba</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

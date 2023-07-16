@@ -9,12 +9,13 @@
 }
 
 .dark-theme {
-   --bg-color: #0a0a0a;
+   --bg-color: #251b33;
   --column-bg: #cbdffa;
-  --nav-color: #000;
-  --white-color: #000;
-  --links-color: #626262;
+  --nav-color:  #317773;
+  /* --white-color: #5cdb95; */
+  /* --links-color: #626262; */
   --grey-color: #ccc;
+   /* --links-color: white; */
 }
 
 * {
@@ -581,5 +582,93 @@ nav {
 #dark-btn.dark-btn-on {
   padding-left: 23px;
   background: blue;
+}
+
+/* ============ profile page ========  */
+.profile-container {
+  padding: 20px 15%;
+  color: var(--links-color);
+}
+
+.cover-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.profile-details {
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.pd-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pd-image {
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 6px;
+}
+
+.pd-row div h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.pd-row div p {
+  font-size: 13px;
+ 
+}
+
+.pd-row div img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.pd-right button {
+  background: var(--nav-color);
+  border: 0;
+  outline: 0;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--white-color);
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pd-right button img {
+  height: 15px;
+  margin-right: 10px;
+}
+
+.pd-right button:first-child {
+  background: #e4e6eb;
+  color: #000;
+}
+
+.pd-right {
+  text-align: right;
+}
+
+.pd-right a {
+  background: #e4e6eb;
+  border-radius: 3px;
+  padding: 12px;
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+.pd-right a img {
+  width: 20px;
 }
 
